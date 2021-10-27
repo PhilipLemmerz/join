@@ -6,7 +6,11 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-#outerDiv {
+.displayNone {
+    display: none !important;
+}
+
+#outerDivCanvanBoard {
     display: flex;
     height: 100%;
     width: 100%;
@@ -14,7 +18,8 @@ body {
 
 #sidebar {
     background-color: #1C2D93;
-    height: 100vh;    
+    height: 100vh;
+    min-width: 13%;    
 }
 
 #sidebarContent {
@@ -33,7 +38,8 @@ body {
 }
 
 #sideNavigation {
-    list-style: none;    
+    list-style: none; 
+   
 }
 
 nav li a {
@@ -57,4 +63,45 @@ nav li:hover {
     border-radius: 100%;
     border: 5px white solid;
     margin-bottom: 2rem;
+}
+
+#content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.canvanColumns {
+    height: 90%;
+    background-color: rgba(128, 128, 128, 0.116);
+    width: 20%;
+    border-radius: 5px;
+}
+
+.canvanColumns h2 {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #1c2e9348;
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 5px;
+}
+
+#popUpNewTask {
+    display: flex;
+    width: 80%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    background-color: #3e4b9227;
+    border-radius: 5px;
+
+}
+
+.formElement {
+    display: flex;
+    flex-direction: column;
 }

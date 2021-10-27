@@ -14,7 +14,7 @@
 
 <body>
 
-    <div id="outerDiv">
+    <div id="outerDivCanvanBoard">
 
         <div id="sidebar">
             <div id="sidebarContent">
@@ -32,11 +32,80 @@
 
         </div>
 
-        <div id="canvanBoard">
+        <div id="content">
+            <div class="displayNone" id="canvanBoard">
+                <div class="canvanColumns" id="columnTodo">
+                    <h2>todo</h2>
+
+                </div>
+                <div class="canvanColumns" id="columnInprogress">
+                    <h2>in progress</h2>
+
+
+                </div>
+                <div class="canvanColumns" id="columnTesting">
+                    <h2>testing</h2>
+
+                </div>
+                <div class="canvanColumns" id="columnDone">
+                    <h2>done</h2>
+
+                </div>
+            </div>
+
+
+
+            <form id="popUpNewTask">
+                <div id="leftRow">
+                    <div class="formElement">
+                        <label for="title"> title </label>
+                        <input class="inputField" type="text" id="title" name="title" placeholder="Task Title...">
+                    </div>
+
+                    <div class="formElement">
+                        <label for="category"> category </label>
+                        <select class="inputField" id="category" name="category">
+                            <option value="Design"> design</option>
+                            <option value="usability">usability</option>
+                            <option value="performance">performance</option>
+                        </select>
+                    </div>
+
+                    <div class="formElement">
+                        <label for="description"> description </label>
+                        <textarea class="inputField" type="text" id="description" name="description"
+                            placeholder="descripe the task..."></textarea>
+                    </div>
+                </div>
+                <div id="rightRow">                    
+                    <div class="formElement">
+                        <label for="date"> due date </label>
+                        <input class="inputField" type="date" id="date" name="date">
+                    </div>
+                    
+                    <div class="formElement">
+                        <label for="urgency"> urgancy </label>
+                        <select class="inputField" id="urgancy" name="urgancy">
+                            <option value="Design"> high</option>
+                            <option value="usability">standard</option>
+                            <option value="performance">low</option>
+                        </select>
+                    </div>
+                </div>
+                
+
+
+            </form>
+
+
 
         </div>
 
+
+
     </div>
+
+
 
 
 
