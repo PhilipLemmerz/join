@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    margin:0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#outerDiv {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar {
+    background-color: #1C2D93;
+    height: 100vh;    
+}
+
+#sidebarContent {
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+#logoImg {
+    object-fit: contain;
+    width: 5rem;
+    margin-top: 2rem;
+}
+
+#sideNavigation {
+    list-style: none;    
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav li {
+    margin-bottom: 1.5rem;
+    padding-left: 10px;
+    border-left: 5px transparent solid;    
+}
+
+nav li:hover {
+    border-left: 5px white solid;    
+}
+
+#userImg{
+    width: 6rem;
+    border-radius: 100%;
+    border: 5px white solid;
+    margin-bottom: 2rem;
+}
