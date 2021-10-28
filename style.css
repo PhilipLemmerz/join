@@ -95,13 +95,93 @@ nav li:hover {
     height: 90%;
     justify-content: center;
     align-items: center;
-    column-gap: 2rem;
     background-color: #3e4b9227;
     border-radius: 5px;
+}
 
+#rowBox {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 2rem;
 }
 
 .formElement {
     display: flex;
     flex-direction: column;
 }
+
+label {
+    font-size: 2rem;
+    color: #203192;
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
+}
+
+.inputField {
+    width: 25vw;
+    height: 3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#teamMember {
+    display: flex;
+    column-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.fa-user-circle {
+    font-size: 3.2rem;
+    color: #2031924f;
+    border: 3px #203192 solid;
+    border-radius: 100%;
+}
+
+.fa-plus-circle {
+    font-size: 3rem;
+    color: #20319242;
+}
+
+.fa-plus-circle:hover {
+    color: #203192b7;
+}
+
+.imgTeamMember {
+    width: 3.1rem;
+    border-radius: 100%;
+    border: 2px #1C2D93 solid;
+}
+
+#buttonBox {
+    display: flex;
+    margin-top: 2rem;
+    column-gap: 2rem;
+    justify-content: flex-end;
+}
+
+#cancelButton {
+    background-color: transparent;
+    color: #1C2D93;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: bold;
+}
+
+#cancelButton:hover {
+    color: #1c2e9367;
+}   
+
+#submitBtnNewTask {
+    background-color: #1C2D93;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.7rem;
+    color: white;
+    border-radius: 5px;
+}
+
+#submitBtnNewTask:hover {
+    background-color: #1c2e9377;
+}
+
